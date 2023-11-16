@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="splashScreen_color">#FFFFFFFF</color>
+    <color name="home_page_title_color">#FF000000</color>
 </resources>
