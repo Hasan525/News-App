@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.newsapp.presentation.onBoarding.OnBoardingScreen
 import com.example.newsapp.ui.theme.NewsAppTheme
 
 class HomeScreenActivity : ComponentActivity() {
@@ -19,7 +20,7 @@ class HomeScreenActivity : ComponentActivity() {
         installSplashScreen()
         setContent {
             NewsAppTheme {
-                // A surface container using the 'background' color from the theme
+                OnBoardingScreen()
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
