@@ -28,7 +28,8 @@ fun OnBoardingPages(
         Image(
             modifier = Modifier
                 .fillMaxWidth()
-                .fillMaxHeight(fraction = 0.6f),
+                .fillMaxHeight(fraction = 0.4f)
+                .fillMaxWidth(0.4f),
             painter = painterResource(id = page.image),
             contentDescription = null,
             contentScale = ContentScale.Crop
@@ -37,14 +38,14 @@ fun OnBoardingPages(
         Text(
             text = page.title,
             modifier = Modifier.padding(horizontal = mediumPadding2),
-            style = MaterialTheme.typography.h1.copy(fontWeight = FontWeight.Bold),
+            style = MaterialTheme.typography.h5.copy(fontWeight = FontWeight.Bold),
             color = colorResource(id = R.color.home_page_title_color)
         )
-
+        Spacer(modifier = Modifier.height(mediumPadding1))
         Text(
             text = page.description,
             modifier = Modifier.padding(horizontal = mediumPadding2),
-            style = MaterialTheme.typography.h3,
+            style = MaterialTheme.typography.h6,
             color = colorResource(id = R.color.home_page_title_color)
         )
     }

@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.dp
 fun NewsButton(
     text: String,
     onClick: () -> Unit,
-){
+) {
     Button(
         onClick = onClick,
         colors = ButtonDefaults.buttonColors(
@@ -22,7 +22,7 @@ fun NewsButton(
     ) {
         Text(
             text = text,
-            style = MaterialTheme.typography.h2.copy(fontWeight = FontWeight.SemiBold),
+            style = MaterialTheme.typography.h5.copy(fontWeight = FontWeight.SemiBold),
             color = Color.White
         )
     }
@@ -37,8 +37,8 @@ fun NewsTextButton(
     TextButton(onClick = onClick) {
         Text(
             text = text,
-            style = MaterialTheme.typography.h2.copy(fontWeight = FontWeight.SemiBold),
-            color = Color.White
+            style = MaterialTheme.typography.h5.copy(fontWeight = FontWeight.SemiBold),
+            color = Color.Blue
         )
     }
 }
